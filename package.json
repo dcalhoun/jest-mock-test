@@ -1,0 +1,32 @@
+{
+  "name": "jest-mock-test",
+  "version": "0.0.1",
+  "description": "Bug repoduction for Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dcalhoun/jest-mock-test.git"
+  },
+  "keywords": [
+    "jest",
+    "mock",
+    "test"
+  ],
+  "author": "David Calhoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcalhoun/jest-mock-test/issues"
+  },
+  "homepage": "https://github.com/dcalhoun/jest-mock-test#readme",
+  "devDependencies": {
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(gif|png|jpg|ttf|eot|svg)(\\?.+)?$": "<rootDir>/__mocks__/fileMock.js"
+    }
+  }
+}
